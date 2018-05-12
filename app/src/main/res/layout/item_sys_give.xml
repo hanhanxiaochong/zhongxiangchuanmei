@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+     android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginLeft="60px"
+        android:src="@mipmap/icon_my_wallet"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:orientation="vertical"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="48px"
+        android:gravity="center_vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[美白嫩肤]"
+                android:textColor="@color/yellow"
+                android:textSize="42px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单人水氧换肤"
+                android:textColor="@color/txt_black"
+                android:textSize="42px"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2次"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="42px"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="焕肤 脸部 补水保湿 清洁补水"
+            android:layout_marginTop="10px"
+            android:textColor="@color/txt_gray"
+            android:textSize="36px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效期"
+            android:layout_marginTop="10px"
+            android:textColor="@color/txt_gray"
+            android:textSize="36px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仅限项目下单时附带使用"
+            android:layout_marginTop="10px"
+            android:gravity="right"
+            android:textColor="@color/txt_dark_gray"
+            android:textSize="36px"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

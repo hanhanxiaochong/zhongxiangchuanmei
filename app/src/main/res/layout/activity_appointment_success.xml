@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_topview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="150px"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_appointment_success"/>
+
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black"
+                android:layout_marginTop="30px"
+                android:textStyle="bold"
+                android:textSize="42px"
+                android:text="预约成功"/>
+
+            <TextView
+                android:id="@+id/txt_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="46px"
+                android:textColor="@color/txt_black"
+                android:layout_marginTop="20px"
+                android:textStyle="bold"
+                android:text="体验码：56M789"/>
+
+            <TextView
+                android:id="@+id/txt_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="46px"
+                android:textColor="@color/txt_gray"
+                android:layout_marginTop="20px"
+                android:text="请及时到店享受服务"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txt_service"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="100px"
+                android:paddingTop="50px"
+                android:text="联系客服"/>
+
+            <TextView
+                android:id="@+id/txt_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100px"
+                android:paddingTop="50px"
+                android:layout_marginLeft="50px"
+                android:text="查看订单"/>
+
+            <TextView
+                android:id="@+id/txt_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100px"
+                android:paddingTop="50px"
+                android:layout_marginLeft="50px"
+                android:text="去逛逛"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

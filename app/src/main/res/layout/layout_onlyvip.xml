@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="您的会员等级是：创美天使"
+                android:gravity="center"
+                android:textColor="@color/txt_black"
+                android:textStyle="bold"
+                android:textSize="40px"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_vip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+          
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

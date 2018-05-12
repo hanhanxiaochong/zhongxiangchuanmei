@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textColor="@color/txt_black"
+            android:text="北京"
+            android:gravity="center"
+            android:textSize="36px"/>
+
+        <EditText
+            android:id="@+id/et_home_search"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15px"
+            android:layout_marginTop="15px"
+            android:layout_weight="5.5"
+            android:background="@drawable/bg_search_et"
+            android:hint="请输入要搜索的内容"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="15px"
+            android:paddingLeft="35px"
+            android:textColorHint="@color/txt_gray"
+            android:textSize="36px"
+            android:textColor="@color/txt_black"/>
+
+        <ImageView
+            android:id="@+id/img_home_msg"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_home_msg"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:src="@mipmap/banner1"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:id="@+id/ll_home_announcement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/view_bg"
+                android:paddingTop="25px"
+                android:paddingBottom="25px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:src="@mipmap/icon_home_announcement"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公告：新店开业，前十名办理会员享受VIP分红。"
+                    android:textColor="@color/txt_black"
+                    android:textSize="32px"
+                    android:layout_marginLeft="24px"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_home_vip"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_home_vip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="会员专享"
+                        android:layout_marginTop="15px"
+                        android:textColor="@color/txt_black"
+                        android:textSize="40px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_nearby_shop"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_home_nearbyshop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="附近门店"
+                        android:layout_marginTop="15px"
+                        android:textColor="@color/txt_black"
+                        android:textSize="40px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_hotproject"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_home_hotproject"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门项目"
+                        android:layout_marginTop="15px"
+                        android:textColor="@color/txt_black"
+                        android:textSize="40px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_mygifts"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_home_mygifts"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的礼包"
+                        android:layout_marginTop="15px"
+                        android:textColor="@color/txt_black"
+                        android:textSize="40px"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

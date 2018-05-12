@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/layout_topview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/pink">
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@mipmap/icon_qq"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="50px"
+            android:textStyle="bold"
+            android:textSize="50px"
+            android:text="您的VIP会员等级是：创美天使"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您可以免费享受以下项目"
+        android:textSize="46px"
+        android:textColor="@color/txt_black"
+        android:textStyle="bold"
+        android:padding="30px"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_myvip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

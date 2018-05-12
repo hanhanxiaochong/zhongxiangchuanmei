@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+    <include
+        android:id="@+id/ll_top"
+        layout="@layout/layout_topview"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top"
+        android:layout_above="@id/ll_bottom">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_shopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京众享创美美容店（西单）"
+                    android:textColor="@color/txt_dark_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="48px"/>
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_location"
+                    android:layout_alignParentRight="true"
+                    android:padding="48px"/>
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_tel"
+                    android:layout_toLeftOf="@+id/img_location"
+                    android:padding="48px"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="48px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_order_self"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:textSize="40px"
+                            android:text="美迪惠尔保湿面膜10片"
+                            android:textColor="@color/txt_black"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="32px"
+                        android:text="会员：￥60元"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="48px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_order_self"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:textSize="40px"
+                            android:text="项目标题"
+                            android:textColor="@color/txt_black"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="32px"
+                        android:text="非会员：￥3888元"
+                        android:layout_marginTop="25px"
+                        android:textColor="@color/txt_black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号：4868208709"
+                android:textColor="@color/txt_dark_gray"
+                android:layout_marginLeft="48px"
+                android:layout_marginTop="48px"/>
+
+            <TextView
+                android:id="@+id/txt_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单状态：待支付"
+                android:textColor="@color/txt_dark_gray"
+                android:layout_marginLeft="48px"
+                android:layout_marginTop="18px"/>
+
+            <TextView
+                android:id="@+id/txt_order_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单手机：15834026500"
+                android:textColor="@color/txt_dark_gray"
+                android:layout_marginLeft="48px"
+                android:layout_marginTop="18px"/>
+
+            <TextView
+                android:id="@+id/txt_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单时间：2018-05-02 16:48"
+                android:textColor="@color/txt_dark_gray"
+                android:layout_marginLeft="48px"
+                android:layout_marginTop="18px"/>
+
+            <TextView
+                android:id="@+id/txt_order_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货方式：邮寄"
+                android:textColor="@color/txt_dark_gray"
+                android:layout_marginLeft="48px"
+                android:layout_marginTop="18px"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_wait_takedelivery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_check"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="查看物流"
+                android:gravity="center"
+                android:textSize="60px"
+                android:background="@color/orange2"/>
+
+            <TextView
+                android:id="@+id/txt_confirm"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="确认收货"
+                android:gravity="center"
+                android:textSize="60px"
+                android:background="@color/pink2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_check_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="查看物流"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="60px"
+            android:background="@color/orange2"/>
+
+    </LinearLayout>
+</RelativeLayout>

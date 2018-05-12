@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="48px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_close_black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告详情"
+            android:textSize="48px"
+            android:textColor="@color/txt_black"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt_black"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px"
+        android:text="热烈庆祝！共享创美第211家新店开业"/>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-04-16 22:53"
+        android:textSize="28px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="48px"
+        android:textColor="@color/txt_black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px"
+        android:textColor="@color/white"
+        android:textSize="66px"
+        android:text="图片"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/red"
+        android:layout_height="600px"/>
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容"
+        android:textColor="@color/txt_black"
+        android:textSize="30px"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px"
+        android:layout_marginBottom="40px"
+        android:lineSpacingExtra="10px"/>
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_topview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京众享创美美容店（西单）"
+            android:textColor="@color/txt_dark_gray"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48px"/>
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_location"
+            android:layout_alignParentRight="true"
+            android:padding="48px"/>
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tel"
+            android:layout_toLeftOf="@+id/img_location"
+            android:padding="48px"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="48px"
+            android:src="@mipmap/icon_my_wallet"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="48px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_order_self"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:textSize="40px"
+                    android:text="项目标题"
+                    android:textColor="@color/txt_black"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="适合：混合偏干型"
+                android:layout_marginTop="10px"
+                android:textColor="@color/txt_gray"
+                android:textSize="32px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="32px"
+                    android:text="会员：￥60元"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:textSize="32px"
+                    android:text="非会员：￥3888元"
+                    android:textColor="@color/txt_black"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目时长：1小时"
+                android:layout_marginTop="10px"
+                android:textColor="@color/txt_gray"
+                android:textSize="26px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_order_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号：4868208709"
+        android:textColor="@color/txt_dark_gray"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="48px"/>
+
+    <TextView
+        android:id="@+id/txt_order_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单状态：待支付"
+        android:textColor="@color/txt_dark_gray"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="18px"/>
+
+    <TextView
+        android:id="@+id/txt_order_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预定手机：15834026500"
+        android:textColor="@color/txt_dark_gray"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="18px"/>
+
+    <TextView
+        android:id="@+id/txt_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下单时间：2018-05-02 16:48"
+        android:textColor="@color/txt_dark_gray"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="18px"/>
+
+    <TextView
+        android:id="@+id/txt_service_technician"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务技师：李茜茜"
+        android:textColor="@color/txt_dark_gray"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="18px"/>
+
+    <TextView
+        android:id="@+id/txt_service_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务时间：2018-06-16 16:00-18:00"
+        android:textColor="@color/txt_dark_gray"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="18px"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="100px"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="46px"
+            android:textColor="@color/txt_black"
+            android:layout_marginTop="20px"
+            android:textStyle="bold"
+            android:text="体验码：56M789"/>
+
+        <TextView
+            android:id="@+id/txt_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="46px"
+            android:textColor="@color/txt_gray"
+            android:layout_marginTop="20px"
+            android:text="请及时到店享受服务"/>
+    </LinearLayout>
+
+</LinearLayout>

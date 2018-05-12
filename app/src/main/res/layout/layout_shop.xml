@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_home_search"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15px"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="80px"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:background="@drawable/bg_search_et"
+            android:hint="搜索商品 分类 功效"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="15px"
+            android:paddingLeft="35px"
+            android:textColorHint="@color/txt_gray"
+            android:textSize="36px"
+            android:textColor="@color/txt_black"/>
+
+        <ImageView
+            android:id="@+id/img_home_msg"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_home_msg"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_hot"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:textColor="@color/pink"
+                android:layout_centerInParent="true"
+                android:text="热门推荐"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_mianmo"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_mianmo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:textColor="@color/txt_black"
+                android:layout_centerInParent="true"
+                android:text="面膜"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_yanshuang"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:textColor="@color/txt_black"
+                android:layout_centerInParent="true"
+                android:text="眼霜"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_xiezhuang"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:textColor="@color/txt_black"
+                android:layout_centerInParent="true"
+                android:text="卸妆"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32px"
+                android:textColor="@color/txt_black"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:gravity="center"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shaixuan"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="筛选"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

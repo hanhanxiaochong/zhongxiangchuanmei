@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/item_announcement"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt_black"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:text="热烈庆祝！共享创美第211家新店开业"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-04-16 22:53"
+        android:textSize="28px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="60px"
+        android:textColor="@color/txt_black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="公告内容公告内容公告内容公告内容公告内容公告内容公告内容"
+        android:textColor="@color/txt_black"
+        android:textSize="30px"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="48px"
+        android:lineSpacingExtra="10px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        android:layout_marginTop="50px"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:paddingBottom="50px"
+    android:paddingRight="48px">
+
+    <LinearLayout
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="@color/txt_gray"
+            android:text="2017年"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11月"
+            android:textColor="@color/txt_dark_gray"
+            android:textSize="66px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/banner1"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8px"
+            android:layout_marginTop="18px"
+            android:text="集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍集团文案介绍"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

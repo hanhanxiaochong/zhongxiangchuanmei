@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/layout_topview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:orientation="vertical"
+        android:background="@color/pink"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创美天使"
+            android:textColor="@color/white"
+            android:textSize="80px"
+            android:layout_marginTop="100px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累计消费29800元即可成为创美天使"
+            android:textColor="@color/white"
+            android:textSize="48px"
+            android:layout_marginLeft="48px"
+            android:layout_marginRight="48px"
+            android:gravity="center"
+            android:layout_marginTop="160px"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px"
+        android:layout_marginTop="60px"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="60px"
+        android:layout_marginRight="60px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创美天使拥有的特权"
+            android:textSize="36px"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_left"
+                android:layout_marginRight="48px"
+                android:text="更多权限"
+                android:textSize="30px"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.权限"
+        android:textSize="30px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.权限权限"
+        android:textSize="30px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="10px"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.权限权限权限"
+        android:textSize="30px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="10px"
+        android:textColor="@color/black"/>
+    
+    
+    <Button
+        android:id="@+id/btn_recharge"
+        android:layout_width="600px"
+        android:layout_height="150px"
+        android:background="@color/red"
+        android:text="充值购买"
+        android:layout_marginTop="120px"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="42px"/>
+
+</LinearLayout>

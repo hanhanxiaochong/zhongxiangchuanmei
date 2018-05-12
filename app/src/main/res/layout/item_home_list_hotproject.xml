@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="48px"
+            android:background="#FFDEA9"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black"
+                android:textSize="40px"
+                android:text="—瘦脸针—"/>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:text="立即体验"
+                android:textSize="32px"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#BCDAFF"
+            android:paddingRight="48px"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black"
+                android:textSize="40px"
+                android:text="—玻尿酸—"/>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:text="立即体验"
+                android:textSize="32px"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginTop="48px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_three"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="48px"
+            android:background="#FFCED2"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black"
+                android:textSize="40px"
+                android:text="—水光针—"/>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:text="立即体验"
+                android:textSize="32px"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_four"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="48px"
+            android:background="#B9ECE7"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black"
+                android:textSize="40px"
+                android:text="—皮肤管理—"/>
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:text="立即体验"
+                android:textSize="32px"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

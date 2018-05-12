@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <LinearLayout
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_left"
+                android:layout_marginLeft="48px"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="48px"
+            android:text="项目详情"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48px"
+                android:src="@mipmap/icon_share"/>
+
+            <ImageView
+                android:id="@+id/img_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_favorite"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_share"
+                android:layout_marginRight="24px"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50px"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="48px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_order_self"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:textSize="40px"
+                            android:text="项目标题"
+                            android:textColor="@color/txt_black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="32px"
+                            android:text="会员：￥60元"
+                            android:textColor="@color/red"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:textSize="32px"
+                            android:text="非会员：￥3888元"
+                            android:textColor="@color/txt_black"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10px"
+                        android:src="@mipmap/icon_shop_tobevip"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48px"
+                        android:src="@mipmap/icon_my_address"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目时长"
+                        android:layout_marginLeft="15px"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:text="60分钟"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="48px"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="适合症状"
+                    android:layout_marginLeft="15px"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:lineSpacingExtra="10px"
+                android:textColor="@color/txt_gray"
+                android:text="面部浮肿  面部浮肿    面部浮肿    面部浮肿    面部浮肿    面部浮肿"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注意事项"
+                    android:layout_marginLeft="15px"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/txt_gray"
+                android:text="1.面部浮肿  面部浮肿"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"/>
+
+            <TextView
+                android:textColor="@color/txt_gray"
+                android:text="2.面部浮肿  面部浮肿"
+                android:layout_marginTop="5px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:layout_marginTop="50px"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务步骤"
+                    android:layout_marginLeft="15px"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="48px"
+                    android:layout_height="300px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <ImageView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <ImageView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="48px"
+                    android:layout_marginRight="48px"
+                    android:layout_height="300px"
+                    android:src="@mipmap/icon_my_wallet"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:layout_marginTop="50px"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用产品"
+                    android:layout_marginLeft="15px"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="48px"
+                    android:layout_height="300px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <ImageView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_wallet"/>
+
+                <ImageView
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="48px"
+                    android:layout_marginRight="48px"
+                    android:layout_height="300px"
+                    android:src="@mipmap/icon_my_wallet"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:layout_marginTop="50px"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48px"
+                    android:src="@mipmap/icon_my_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详情说明"
+                    android:layout_marginLeft="15px"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginTop="48px"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/banner1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题项目标题"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"
+                android:layout_marginBottom="48px"
+                android:lineSpacingExtra="8px"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/divider"/>
+            
+            <LinearLayout
+                android:id="@+id/ll_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="48px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_star_pre"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@mipmap/icon_star_pre"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@mipmap/icon_star_pre"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@mipmap/icon_star_pre"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@mipmap/icon_star"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="4.0分"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1485条热评"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30px"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+   <RelativeLayout
+       android:id="@+id/rl_bottom"
+       android:layout_width="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_height="160px"
+       android:background="@color/red2">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_centerVertical="true"
+           android:paddingLeft="48px"
+           android:paddingRight="48px"
+           android:src="@mipmap/icon_phone_white"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="立即预约"
+           android:layout_centerInParent="true"
+           android:textColor="@color/white"
+           android:textSize="60px"/>
+   </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

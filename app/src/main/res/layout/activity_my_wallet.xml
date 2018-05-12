@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/layout_topview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:orientation="vertical"
+        android:background="@color/red4">
+
+        <LinearLayout
+            android:id="@+id/ll_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥5006"
+                android:textSize="70px"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textSize="50px"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额"
+            android:textSize="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:layout_below="@id/ll_money"
+            android:textColor="@color/white"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="96px"
+            android:layout_marginRight="96px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="充值"
+                android:background="@drawable/bg_btn_my_wallet"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="提现"
+                android:background="@drawable/bg_btn_my_wallet"
+                android:layout_marginLeft="10px"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="银行卡"
+                android:background="@drawable/bg_btn_my_wallet"
+                android:layout_marginLeft="10px"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40px"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="推荐用户奖励账户"
+            android:layout_marginLeft="48px"
+            android:textColor="@color/txt_black"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥5066"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:textColor="@color/txt_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:layout_marginLeft="5px"
+                android:textSize="36px"
+                android:textColor="@color/txt_black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_right"
+                android:layout_marginLeft="8px"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="推荐门店奖励账户"
+            android:layout_marginLeft="48px"
+            android:textColor="@color/txt_black"
+            android:textSize="40px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥5066"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:textColor="@color/txt_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:layout_marginLeft="5px"
+                android:textSize="36px"
+                android:textColor="@color/txt_black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_right"
+                android:layout_marginLeft="8px"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

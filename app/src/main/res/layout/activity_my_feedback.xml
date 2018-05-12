@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_topview"/>
+
+    <LinearLayout
+        android:id="@+id/ll_write_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:background="@color/divider"
+            android:hint="请输入您的意见，提交给我们"
+            android:textColor="@color/txt_black"
+            android:gravity="left"
+            android:layout_marginLeft="48px"
+            android:layout_marginRight="48px"
+            android:layout_marginTop="48px"
+            android:padding="48px"/>
+
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_margin="48px"
+            android:background="@color/red3"
+            android:text="提交"
+            android:textSize="50px"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_success"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="200px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_appointment_success"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:text="意见已经提交，谢谢您"/>
+
+
+    </LinearLayout>
+</LinearLayout>
